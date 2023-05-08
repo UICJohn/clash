@@ -13,7 +13,7 @@ metadata:
   labels:
     app: clash
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: clash
@@ -45,7 +45,7 @@ spec:
               - key: role
                 operator: In
                 values:
-                  - slave
+                  - worker
 ---
 apiVersion: v1
 kind: Service
